@@ -13,7 +13,6 @@ const resolveSymbols = (symbols = '') => {
   let currentValue = INITIAL_VALUE
   for (const symbol of symbols) {
     if(symbol === '&') output += RESOLVE_SYMBOLS[symbol](currentValue)
-    // output += RESOLVE_SYMBOLS[symbol](currentValue)
     currentValue = RESOLVE_SYMBOLS[symbol](currentValue)
   }
   return output
@@ -23,3 +22,4 @@ const resolveSymbols = (symbols = '') => {
 const input = '&###@&*&###@@##@##&######@@#####@#@#@#@##@@@@@@@@@@@@@@@*&&@@@@@@@@@####@@@@@@@@@#########&#&##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@&'
 
 console.log(resolveSymbols(input))
+
