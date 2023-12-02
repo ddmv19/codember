@@ -1,4 +1,4 @@
-import { list } from './data-challenge3/data.js'
+import { list } from './data-challenges/data-chall-03.js'
 
 const challTree = (str = '') => {
   const helper = str.split('-')

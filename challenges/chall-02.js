@@ -1,4 +1,4 @@
-
+import { input } from './data-challenges/data-chall-02.js'
 const RESOLVE_SYMBOLS = {
   "#": (num) => num + 1,
   "@": (num) => num - 1,
@@ -17,9 +17,6 @@ const resolveSymbols = (symbols = '') => {
   }
   return output
 }
-
-
-const input = '&###@&*&###@@##@##&######@@#####@#@#@#@##@@@@@@@@@@@@@@@*&&@@@@@@@@@####@@@@@@@@@#########&#&##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@&'
 
 console.log(resolveSymbols(input))
 
